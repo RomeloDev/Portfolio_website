@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media_queries.css">
+    <link
+    href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+</head>
+<body>
+    <header>
+        <nav id="desktop-nav">
+            <div class="logo">Romelo</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#profile">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        </nav>
+        <nav id="hamburger-nav">
+            <div class="logo">Romelo</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="#profile" onclick="toggleMenu()">Home</a></li>
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--Profile Section-->
+    <section id="profile">
+        <div class="section-text">
+            <p class="section_text_p1">Hello, I'm</p>
+            <h1 class="name">John Romel Lucot</h1>
+            <p class="section_text_p2">BSIT Student</p>
+
+            <div class="social-media">
+                <a href="#" onclick="location.href='https://linkedin.com/in/john-romel-lucot-02b2002bb'"><i class='bx bxl-linkedin'></i></a>
+                <a href="#" onclick="location.href='https://github.com/RomeloDev'"><i class='bx bxl-github'></i></a>
+            </div>
+        
+        </div>
+
+        <div class="section_pic-container">
+            <img id="profile_pic" src="./assets/profile.png" alt="Profile-Picture">
+        </div>
+    </section>
+
+    <!--About Section-->
+    <section id="about">
+        <p class="section_text_p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section_pic-container">
+                <img src="./assets/about-pic1.png" 
+                alt="Profile picture" 
+                class="about_pic"
+                />
+            </div>
+            <div class="about-details-containers">
+                <div class="about-containers">
+                    <div class="details-container">
+                            <img src="./assets/experience.png" 
+                            alt="Experience Icon"
+                            class="icon"
+                            />
+                            <h3>Experience</h3>
+                            <p>2 years <br>Java Desktop App Development</p>
+                            <br>
+                            <p>4 months <br>Android App Development</p>
+                            <br>
+                            <p>3 months <br>Frontend Web Development</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" 
+                        alt="Education Icon"
+                        class="icon"
+                        />
+                        <h3>Education</h3>
+                        <ul>
+                            <li>Studying BS in Information Technology</li>
+                            <li>Senior High School Graduate ICT Strand major in Web Development and Animation</li>
+                            <li>High School Graduate</li>
+                            <li>Elementary Graduate</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>I am an Information Technology student with a solid foundation in software development and a passion for creating innovative solutions. I have two years of experience in building desktop applications using Java Swing for the frontend and MySQL for the backend, successfully delivering several systems with this technology stack.
+
+                        In addition to my expertise in desktop development, I am expanding my skills in web and mobile application development. I possess foundational knowledge in frontend web technologies, including HTML, CSS, and JavaScript. On the mobile development side, I am skilled in building Android applications using Java and XML for the frontend, with Firebase integration for the backend.
+                        
+                        I am committed to continuously enhancing my technical skills and look forward to contributing to impactful projects in the ever-evolving field of technology.
+                        </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" 
+        alt="Arrow Icon" 
+        class="icon arrow"
+        onclick="location.href='./#experience'"/>
+    </section>
+
+    <!--Experience Section-->
+    <section id="experience">
+        <p class="section_text_p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience Icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Java Swing</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience Icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience Icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience Icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Javascript</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience Icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>XML</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Backend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience Icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>MySQL</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience Icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Java</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience Icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Firebase</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" 
+            alt="Arrow Icon" 
+            class="icon arrow"
+            onclick="location.href='./#projects'"/>
+    </section>
+
+    <!--Projects Section-->
+    <section id="projects">
+        <p class="section_text_p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="about-containers">
+        <div class="experience-details-container">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/project-one.png" 
+                    alt="Project 1"
+                    class="project-img"
+                    />
+                </div>
+                <h2 class="experience-sub-title project-title">Simple POS System</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com/RomeloDev/Simple-Java-Swing-POS-System-MySQL-CRUD'">
+                        Github
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="experience-details-container">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/project-two.png" 
+                    alt="Project 2"
+                    class="project-img"
+                    />
+                </div>
+                <h2 class="experience-sub-title project-title">Canteen Reservation Management System</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com/RomeloDev/canteen-reservation-system'">
+                        Github
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="experience-details-container">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/project-three.png" 
+                    alt="Project 3"
+                    class="project-img"
+                    />
+                </div>
+                <h2 class="experience-sub-title project-title">Simple Room Customer Information</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com/RomeloDev/Simple-Java-GUI-Program'">
+                        Github
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="experience-details-container">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/homepage.png" 
+                    alt="Project 3"
+                    class="project-img"
+                    />
+                </div>
+                <h2 class="experience-sub-title project-title">BINI Fanmade Website</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com/RomeloDev/BINI-FanMade-Website'">
+                        Github
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="experience-details-container">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/libra.jpg" 
+                    alt="Project 3"
+                    class="project-img"
+                    />
+                </div>
+                <h2 class="experience-sub-title project-title">Libra-Scan Android App</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com/RomeloDev/libra_scan_v1.2'">
+                        Github
+                    </button>
+                </div>
+            </div>
+        </div>
+        </div>
+        <img src="./assets/arrow.png" 
+        alt="Arrow Icon" 
+        class="icon arrow"
+        onclick="location.href='./#contact'"/>
+    </section>
+
+    <!--Contact Section-->
+    <section id="contact">
+        <p class="section_text_p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+    
+        <!-- Contact Form -->
+        <div class="contact-form-container">
+            <form id="contactForm" action="mailto:romelolucot1232@gmail.com">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required />
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required />
+    
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+    
+                <button class="submit-btn" type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+    
+    <!--Footer Section-->
+    <footer>
+        <p>Copyright &#169; 2024 John Romel Lucot. All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
