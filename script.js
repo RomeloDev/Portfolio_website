@@ -25,7 +25,6 @@ document.getElementById("contactForm").addEventListener("submit", function (even
         return;
     }
 
-    alert("Your message has been sent successfully!");
     this.reset(); // Clear the form after submission
 });
 
@@ -39,4 +38,15 @@ function toggleMenu(){
     const icon = document.querySelector(".hamburger-icon");
     menu.classList.toggle("open");
     icon.classList.toggle("open");
+}
+
+function sendEmail(event) {
+    event.preventDefault(); 
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
+
+    const mailtoLink = `mailto:romelolucot1232@gmail.com?subject=Message from ${encodeURIComponent(name)}&body=${encodeURIComponent(message)}%0A%0AFrom: ${encodeURIComponent(email)}`;
+    
+    window.location.href = mailtoLink;
 }
