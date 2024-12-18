@@ -548,8 +548,7 @@ article .icon{
     border-radius: 1rem;
     box-shadow: 0 0 5px var(--main-color),
     0 0 25px var(--main-color),
-    0 0 50px var(--main-color),
-    0 0 100px var(--main-color);
+    0 0 50px var(--main-color);
 }
 
 form {
@@ -606,4 +605,76 @@ footer{
 footer p{
     text-align: center;
     color: var(--main-color);
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 1rem;
+    border-radius: 2rem;
+    box-shadow: 0px 0px 8px 2px var(--main-color);
+}
+
+/* Footer Content */
+
+.footer-content {
+    flex: 1;
+    padding: 0 20px;
+    text-decoration: none;
+}
+
+.footer-content h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-content ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.footer-content ul li .quick-links {
+    text-decoration: none;
+    color: #ccc;
+    transition: color 0.3s ease;
+}
+
+.footer-content ul li .quick-links:hover {
+    color: var(--main-color);
+}
+
+.social-icons {
+    display: flex;
+    padding: 0;
+    justify-content: space-between; 
+}
+.social-icons li {
+    margin-right: 10px;
+    list-style: none; 
+}
+
+.social-icons a {
+    color: #333;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    border-radius: 50%;
+}
+
+.social-icons a:hover {
+    background: var(--main-color);
+    color: var(--second-color);
+    box-shadow: 0 0 1rem var(--main-color);
 }
