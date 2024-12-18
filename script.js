@@ -46,7 +46,7 @@ function sendEmail(event) {
     const email = document.getElementById("email").value;
     const message = document.getElementById("message").value;
 
-    const mailtoLink = `mailto:romelolucot1232@gmail.com?subject=Message from ${encodeURIComponent(name)}&body=${encodeURIComponent(message)}%0A%0AFrom: ${encodeURIComponent(email)}`;
+    const mailtoLink = `mailto:${email}?subject=Message from ${encodeURIComponent(name)}&body=${encodeURIComponent(message)}%0A%0AFrom: ${encodeURIComponent(email)}`;
     
     window.location.href = mailtoLink;
 }
